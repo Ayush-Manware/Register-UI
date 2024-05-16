@@ -3,13 +3,14 @@
 *{
     margin: 0px;
     padding: 0px;
+    color: rgb(30, 30, 30);
     box-sizing: border-box;
 }
 
 .login-container{
     margin: 10vw auto;
     border-radius: 2vw;
-    width: 60vw;
+    width: 65vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,12 +32,12 @@
     padding: 2vw;
     letter-spacing: 1px;
     border-radius: 10px;
-    /* border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px; */
 }
 
 .logo-container{
-    text-align: center;
+    width: 10vw;
+    margin: 0vw auto;
+    display: block;
 }
 
 .logo-image{
@@ -81,9 +82,58 @@ input{
 .login-button{
     background-color: #4F6F38;
     color: white;
-    padding: 1.5vw auto;
-    margin: 1vw auto;
+    padding: 2vw auto;
+    margin: 2vw auto;
     letter-spacing: 2px;
-    border: 1px solid #4F6F38;
-    box-shadow: 1px 2px 3px #444444;
+    border: none;
+    font-size: 1.5vw;  
+    transition: all 0.2s linear;
+    box-shadow: 1px 2px 3px #85a76c;
+}
+
+.login-button:hover{
+    background-color: #4f6f38a3;
+}
+
+.or{
+    text-align: center;
+    margin: 2vw auto;
+}
+
+.login-options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login-options img{
+    width: 3vw;
+    padding: 0.5vw;
+    border-radius: 50%;
+}
+
+.login-options img:hover{
+    box-shadow: 10px solid rgb(0, 0, 0);
+}
+
+.already{
+    font-size: 1vw;
+    text-align: center;
+    margin: 2vw 0vw 0vw 0vw;
+}
+
+@media screen and (max-width:400px) {
+    body{
+        padding: 2vw;
+    }
+
+    .login-container{
+        flex-direction: column;
+        margin: 2vw auto;
+        width: 100%;
+    }
+
+    .form-container{
+        width: 100%;
+    }
 }
