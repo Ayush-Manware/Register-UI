@@ -5,18 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="login-container">
-        <img src="./images/undraw_Fingerprint_login_re_t71l.png" alt="image" class="image">
-        <form action="" class="form">
+        <img src="./images/undraw_Fingerprint_login_re_t71l-removebg-preview.png" alt="image" class="form-image">
+        <form action="" class="form-container">
             <div class="logo-container">
-                <img src="./images/logo.png" alt="#logo" class="logo-image">
-                <h3 class="logo-text">LEAF</h3>
+                <h3 class="logo-text">  <img src="./images/logo.png" alt="#logo" class="logo-image"> LEAF</h3>
             </div>
-            <h2>Create Account</h2>
-            <label for="firstname">First Name</label>
-            <input type="text">
+            <h2 class="create-account">Create Account</h2>
+            <label for="username">Full Name</label>
+            <input type="text" id="username" name="username" placeholder="Enter Full Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+
+            <input type="submit" class="login-button" value="Sign-Up">
         </form>
     </div>
 </body>
