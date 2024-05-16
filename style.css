@@ -136,4 +136,48 @@ input{
     .form-container{
         width: 100%;
     }
+
+    .logo-container{
+        width: 40vw;
+    }
+
+    .create-account{
+        font-size: 6vw;
+        margin: 3vw auto;
+    }
+
+    label{
+        font-size: 4vw;
+    }
+
+    input{
+        font-size: 4vw;
+        padding: 2vw;
+    }
+
+    ::placeholder{
+        font-size: 3vw;
+    }
+
+    input, label{
+        margin: 2vw auto;
+    }
+
+    .login-button{
+        margin: 5vw auto;
+        font-size: 5vw;
+    }
+
+    .or{
+        font-size: 5vw;
+    }
+
+    .login-options img{
+        width: 11vw;
+    }
+    .already{
+        font-size: 4vw;
+        margin: 4vw 0vw 0vw 0vw;
+    }
+
 }
